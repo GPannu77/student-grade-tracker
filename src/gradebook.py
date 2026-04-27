@@ -28,7 +28,7 @@ class Gradebook:
             print(f"Course with name {course_name} does not exist.")
             return
         
-        self.courses[course_name].enroll_student(self.students[student_id])
+        self.courses[course_name].add_student(self.students[student_id])
         
     def add_grade(self, student_id, course_name, grade):
         if student_id not in self.students:
